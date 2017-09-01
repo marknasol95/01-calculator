@@ -27,10 +27,48 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="addNums"
-        android:text="@string/add" />
+        android:text="@string/add"
+        android:textColor="@color/colorRed"
+        android:background="@color/colorLightBlue"/>
+
+    <Button
+        android:id="@+id/subtract"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="subtractNums"
+        android:text="Subtract"
+        android:textColor="@color/colorRed"
+        android:background="@color/colorLightPurple"/>
+
+    <Button
+        android:id="@+id/multiply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="multiplyNums"
+        android:text="Multiply"
+        android:textColor="@color/colorRed"
+        android:background="@color/colorLightBlue"/>
+
+    <Button
+        android:id="@+id/divide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="divideNums"
+        android:text="Divide"
+        android:textColor="@color/colorRed"
+        android:background="@color/colorLightPurple"/>
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clearFields"
+        android:text="Clear" />
+
     <TextView
         android:id="@+id/result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="The answer will be here" />
+        android:text="@string/result_hint"
+        android:textColor="@color/colorRed"/>
 </LinearLayout>

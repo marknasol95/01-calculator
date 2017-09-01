@@ -30,9 +30,59 @@ public class MainActivity extends AppCompatActivity {
 
     // TODO: input validation: set text to show error
     public void addNums(View v) {
-        num1 = Double.parseDouble(etNum1.getText().toString());
-        num2 = Double.parseDouble(etNum2.getText().toString());
-        result.setText(Double.toString(num1 + num2));
+        try{
+            num1 = Double.parseDouble(etNum1.getText().toString());
+            num2 = Double.parseDouble(etNum2.getText().toString());
+            result.setText(Double.toString(num1 + num2));
+        }catch(Exception e){
+            displayErrorMessage();
+        }
     }  //addNums()
 
+    public void subtractNums(View v){
+        try{
+            num1 = Double.parseDouble(etNum1.getText().toString());
+            num2 = Double.parseDouble(etNum2.getText().toString());
+            result.setText(Double.toString(num1 - num2));
+        }catch(Exception e){
+            displayErrorMessage();
+        }
+    }
+
+    public void multiplyNums(View v){
+        try{
+            num1 = Double.parseDouble(etNum1.getText().toString());
+            num2 = Double.parseDouble(etNum2.getText().toString());
+            result.setText(Double.toString(num1 * num2));
+        }catch(Exception e){
+            displayErrorMessage();
+        }
+    }
+
+    public void divideNums(View v){
+        try{
+            num1 = Double.parseDouble(etNum1.getText().toString());
+            num2 = Double.parseDouble(etNum2.getText().toString());
+            if(num2 == 0)
+                result.setText("A number cannot be divided by zero");
+            else
+                result.setText(Double.toString(num1 / num2));
+        }catch(Exception e){
+            displayErrorMessage();
+        }
+    }
+
+    private void displayErrorMessage(){
+        if(etNum1.getText().toString().equals("") ||
+                etNum2.getText().toString().equals("")) {
+            result.setText("A number cannot be empty");
+        }
+        else
+            result.setText("Given input is invalid");
+    }
+
+    public void clearFields(View v){
+        etNum1.setText("");
+        etNum2.setText("");
+    }
 }
