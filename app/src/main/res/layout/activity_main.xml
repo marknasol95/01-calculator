@@ -38,7 +38,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="subtractNums"
-        android:text="Subtract"/>
+        android:text="@string/subtract"/>
 
     <Button
         style="@style/buttons"
@@ -46,7 +46,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="multiplyNums"
-        android:text="Multiply"/>
+        android:text="@string/multiply"/>
 
     <Button
         style="@style/buttons.alt"
@@ -54,14 +54,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="divideNums"
-        android:text="Divide"/>
+        android:text="@string/divide"/>
 
     <Button
         android:id="@+id/clear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="clearFields"
-        android:text="Clear" />
+        android:text="@string/clear" />
 
     <TextView
         style="@style/result"
