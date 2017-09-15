@@ -7,5 +7,17 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-
+    <style name="numberIn">
+        <item name="android:inputType">number</item>
+    </style>
+    <style name="buttons">
+        <item name="android:background">@color/colorLightBlue</item>
+        <item name="android:textColor">@color/colorRed</item>
+    </style>
+    <style name="buttons.alt">
+        <item name="android:background">@color/colorLightPurple</item>
+    </style>
+    <style name="result">
+        <item name="android:textColor">@color/colorRed</item>
+    </style>
 </resources>
